@@ -4,7 +4,7 @@ description: Example description
 baseurl: /
 
 # Personal settings
-twitter: @opencrumb__
+# twitter: @opencrumb__
 
 # Sass settings
 sass:
