@@ -6,8 +6,8 @@ layout: default
 		<ul class="gallery">
 			{% for gallery_image in page.gallery_images %}
 			<li class="gallery-image">
-				<a href="/img/{{ image_path }}" title="{{ title }}" class="lightbox">
-					<img src="/img/{{ image_path }}" alt="{{ title }}"/>
+				<a href="/img/{{ gallery_image.image_path }}" title="{{ gallery_image.title }}" class="lightbox">
+					<img src="/img/{{ gallery_image.image_path }}" alt="{{ gallery_image.title }}"/>
 				</a>
 			</li>
 			{% endfor %}
