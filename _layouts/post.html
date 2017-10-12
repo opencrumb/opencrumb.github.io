@@ -16,7 +16,9 @@ layout: default
 		{% endif %}
 		<article>
 			{% if page.cover_image %}
-				<img src="/img/{{ page.cover_image }}" alt="{{ page.title }}"/>
+				<a href="/img/{{ page.cover_image }}" title="{{ page.title }}" class="lightbox">
+					<img src="/img/{{ page.cover_image }}" alt="{{ page.title }}"/>
+				</a>
 			{% endif %}
 			<h1>{{ page.title }}</h1>
 			{{ content }}
