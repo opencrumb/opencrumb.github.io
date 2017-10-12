@@ -23,4 +23,7 @@ layout: default
 			<section class="post-footer">
 			  {{ page.date | date: "%B %-d, %Y" }}
 			</section>
+			<section class="post-comments">
+				{% include comment_form.html %}
+			</section>
 		</article>
