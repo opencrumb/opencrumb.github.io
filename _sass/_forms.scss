@@ -1,0 +1,13 @@
+.post_comments,
+form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  margin: 0 0 1rem 0;
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
