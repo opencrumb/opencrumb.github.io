@@ -9,6 +9,13 @@ form {
   flex-direction: column;
 }
 
+.form-header,
+.form-footer {
+  width: 100%;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
 form label {
   font-size: 1.2rem;
 }

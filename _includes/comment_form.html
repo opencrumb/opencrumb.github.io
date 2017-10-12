@@ -1,5 +1,8 @@
-<h3>Add a comment</h3>
+
 <form method="POST" action="https://api.staticman.net/v2/entry/opencrumb/opencrumb/gh-pages/comments">
+  <header class="form-header">
+    <h4>Add a comment</h4>
+  </header>
   <input name="options[redirect]" type="hidden" value="https://opencrumb.github.io">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <div class="input-group">
@@ -7,5 +10,7 @@
     <input name="fields[email]" type="email" placeholder="E-mail address">
   </div>
   <textarea name="fields[message]" placeholder="Your message"></textarea>
-  <button type="submit">Go!</button>
+  <footer class="form-footer">
+    <button type="submit">Go!</button>
+  </footer>
 </form>
