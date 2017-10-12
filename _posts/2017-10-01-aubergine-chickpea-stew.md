@@ -2,9 +2,6 @@
 title: Aubergine and Chickpea Stew
 category: cooking
 cover_image: aubergine-chickpea-stew.jpg
-gallery_images:
-  - image_path: aubergine-chickpea-stew.jpg
-    image_title: Aubergine and Chickpea Stew
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate auctor odio vel tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus in metus a condimentum. Quisque tempor pellentesque neque. Donec vitae felis maximus, tempor elit at, interdum sem. Duis rhoncus blandit semper. Nulla leo nunc, vulputate eget mi ut, placerat pellentesque neque. Suspendisse maximus est sed gravida faucibus. Donec bibendum pellentesque ipsum, eget pulvinar enim interdum et. Nullam ut varius mi, nec tincidunt ipsum. Nam accumsan mollis velit, in convallis quam suscipit vitae. Aenean massa neque, viverra ut erat non, porttitor efficitur tellus. Suspendisse eu suscipit eros. Aliquam pretium molestie tempor. Curabitur nec augue ac odio tincidunt dapibus semper vel neque. Praesent vel mauris nec leo lobortis tincidunt.
