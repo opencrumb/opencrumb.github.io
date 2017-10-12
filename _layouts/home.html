@@ -6,7 +6,7 @@ layout: default
           <li class="post">
             <div class="post-overlay" {%if post.cover_image %}style="background-image: url('{{ "" | relative_url }}/img/{{ post.cover_image}}')"{% endif %}>
               <div class="post-details">
-                <!--<span class="post-category">{{ post.category }}</span>-->
+                <span class="post-category">{{ post.category }}</span>
                 <a href="{{ post.url | relative_url }}" {%if post.title_color %}style="color: #{{ post.title_color }}"{% endif %}>
                   <h2 class="post-title">{{ post.title }}</h2>
                 </a>
