@@ -43,7 +43,9 @@
 <script src={{ "js/vendor/animsition/animsition.min.js" | relative_url }}></script>
 <script>
     $(function () {
-      $('.lightbox').fluidbox();
+      $('.lightbox').fluidbox({
+        stackIndex: 1500;
+      });
     });
 </script>
 {% endif %}
