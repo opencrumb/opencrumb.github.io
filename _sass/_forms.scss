@@ -3,6 +3,15 @@ form {
   width: 100%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 1.2rem;
+}
+
 form input,
 form textarea {
   margin: 0 0 1rem 0;
@@ -10,4 +19,19 @@ form textarea {
   border: 0;
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 1);
+  transition-duration: 250ms;
+}
+
+form input:focus,
+form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+form button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 1);
+  transition-duration: 250ms;
 }
