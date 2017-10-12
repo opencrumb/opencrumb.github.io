@@ -1,0 +1,20 @@
+/*-------------------------*\
+  Post layout
+\*-------------------------*/
+
+article {
+  max-width: 60rem;
+  margin: 5rem auto;
+  padding: 0 2.5rem;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.post-footer {
+  text-align: center;
+  font-size: 1.4rem;
+}

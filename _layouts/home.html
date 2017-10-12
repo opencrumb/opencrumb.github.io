@@ -1,0 +1,18 @@
+---
+layout: default
+---
+      <ul class="posts">
+        {% for post in site.posts %}
+          <li class="post">
+            <div class="post-overlay" {%if post.cover_image %}style="background-image: url('{{ "" | relative_url }}/img/{{ post.cover_image}}')"{% endif %}>
+              <div class="post-details">
+                <!--<span class="post-category">{{ post.category }}</span>-->
+                <a href="{{ post.url | relative_url }}" {%if post.title_color %}style="color: #{{ post.title_color }}"{% endif %}>
+                  <h2 class="post-title">{{ post.title }}</h2>
+                </a>
+                <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>

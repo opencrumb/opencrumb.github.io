@@ -1,0 +1,16 @@
+# Site settings
+title: Example
+description: Example description
+baseurl: /
+
+# Personal settings
+twitter: @opencrumb__
+
+# Sass settings
+sass:
+  add_charset: true
+  sass_dir: _sass
+#  style: :compressed
+
+# Post settings
+permalink: /:title/

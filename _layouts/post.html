@@ -1,0 +1,23 @@
+---
+layout: default
+---
+		{% if page.gallery_images %}
+		<!-- Gallery -->
+		<ul class="gallery">
+			{% for gallery_image in page.gallery_images %}
+			<li class="gallery-image">
+				<a href="/img/{{ image_path }}" title="{{ title }}" class="lightbox">
+					<img src="/img/{{ image_path }}" alt="{{ title }}"/>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<!-- / Gallery -->
+		{% endif %}
+		<article>
+			<h1>{{ page.title }}</h1>
+			{{ content }}
+			<section class="post-footer">
+			  {{ page.date | date: "%B %-d, %Y" }}
+			</section>
+		</article>

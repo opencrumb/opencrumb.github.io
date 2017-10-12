@@ -1,0 +1,64 @@
+/*-------------------------*\
+  Type
+\*-------------------------*/
+
+p {
+  margin-bottom: 2.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+h2.post-title {
+  font-size: 2.25rem;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #000;
+  font-family: "gitan-latin", sans-serif;
+}
+
+
+a {
+  color: #551A8B;
+  text-decoration: none;
+}
+
+.post-category,
+.post-title,
+.post-date,
+.post-excerpt {
+  margin-bottom: 1rem;
+}
+
+.post-details a {
+  color: #fff;
+}
+
+span.post-category {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.post-date {
+  text-align: center;
+  font-size: 1.6rem;
+  display: inherit;
+  color: #fff;
+}

@@ -1,0 +1,117 @@
+/*-------------------------*\
+  Base
+\*-------------------------*/
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background: $base-background-color;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: $nav-height 0 0 0;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-color;
+  display: flex;
+  flex-direction: column;
+}
+
+body.is-home {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: $nav-height 0;
+  overflow: hidden;
+}
+
+body.is-post,
+body.is-page {
+  min-height: 100%;
+  width: 100%;
+}
+
+.is-home main,
+.is-home .posts,
+.slick-list,
+.slick-track {
+  height: 100%;
+  width: 100%;
+}
+
+.is-post main,
+.is-page main {
+  flex: 1;
+}
+
+.is-home main {
+  max-height: 62rem;
+  margin: auto 0;
+}
+
+.is-home .post {
+  height: 100%;
+  padding: 2.5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.is-home .post-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-home .post-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+  color: #fff;
+}
+
+.is-post body,
+.is-page body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  background-color: $base-background-color;
+}
+
+.is-post main,
+.is-page main {
+  flex: 1;
+}
+
+/* Essentials */
+
+textarea,
+input,
+button,
+*:focus {
+  outline: none;
+}

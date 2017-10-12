@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+  <head>
+    <meta charset="{{ site.encoding }}">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "css/main.css" | relative_url }}">
+  </head>
+  <body {% if page.layout == 'home' %}class="is-home"{% elsif page.layout == 'page' %}class="is-page"{% elsif page.layout == 'post' %}class="is-post"{% endif %}>
+    <nav>
+      <a class="brand" href="{{ "/" | relative_url }}" title="{{ site.title }}">{{ site.title }}</a>
+    </nav>
+    <main>
