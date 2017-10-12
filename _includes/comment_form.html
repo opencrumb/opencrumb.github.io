@@ -2,9 +2,9 @@
   <input name="options[redirect]" type="hidden" value="https://opencrumb.github.io">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <div class="input-group">
-    <label><input name="fields[name]" type="text">Name</label>
-    <label><input name="fields[email]" type="email">E-mail</label>
+    <input name="fields[name]" type="text" placeholder="Name">
+    <input name="fields[email]" type="email" placeholder="E-mail address">
   </div>
-  <label><textarea name="fields[message]"></textarea>Message</label>
+  <textarea name="fields[message]" placeholder="Your message"></textarea>
   <button type="submit">Go!</button>
 </form>
