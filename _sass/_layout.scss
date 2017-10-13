@@ -31,6 +31,10 @@ article img {
 
 /* Recipe */
 
+.article-cooking {
+  max-width: 72rem;
+}
+
 .article-cooking .article-body {
   display: flex;
   flex-flow: row wrap;
