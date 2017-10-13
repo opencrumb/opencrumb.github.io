@@ -32,7 +32,7 @@ article img {
 /* Recipe */
 
 .article-cooking {
-  max-width: 72rem;
+  max-width: 76.8rem;
 }
 
 .article-cooking .article-body {
@@ -61,7 +61,12 @@ article img {
    width: calc(60% - 1.75rem);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
+
+  .article-cooking .article-body .ingredients {
+    margin-bottom: 2.5rem;
+  }
+
   .article-cooking .article-body .ingredients,
   .article-cooking .article-body .article-body-content {
     width: 100%;
