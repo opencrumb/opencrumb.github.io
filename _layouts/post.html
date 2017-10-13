@@ -12,22 +12,46 @@ layout: default
 			</li>
 			{% endfor %}
 		</ul>
-		<article>
 		<!-- / Gallery -->
+		<!-- Article container -->
+		<article class="article-{{ post.category }}">
 		{% else %}
-		<article>
+		<!-- Article container -->
+		<article class="article-{{ post.category }}">
 			{% if page.cover_image %}
+			<!--- Article header -->
+			<header class="article-header">
 				<a href="/img/{{ page.cover_image }}" title="{{ page.title }}" class="lightbox">
 					<img src="/img/{{ page.cover_image }}" alt="{{ page.title }}"/>
 				</a>
 			{% endif %}
 		{% endif %}
 			<h1>{{ page.title }}</h1>
-			{{ content }}
-			<section class="post-footer">
+			</header>
+			<!-- / Article header -->
+			<!-- Article body -->
+			<section class="article-body">
+				{% if page.ingredients %}
+					<ul class="ingredients">
+					{% for ingredient in page.ingredients %}
+						<li class="ingredient">
+							{{}}
+						</li>
+					{% endfor %}
+					</ul>
+				{% endif %}
+				{{ content }}
+			</section>
+			<!-- / Article body -->
+			<!-- Footer -->
+			<footer class="post-footer">
 			  {{ page.date | date: "%B %-d, %Y" }}
-			</section>
-			<section class="post-comments">
-				{% include comment_form.html %}
-			</section>
+				<!-- Comments -->
+				<section class="post-comments">
+					{% include comment_form.html %}
+				</section>
+				<!-- / Comments -->
+			</footer>
+			<!-- / Footer -->
 		</article>
+		<!-- / Article container -->
