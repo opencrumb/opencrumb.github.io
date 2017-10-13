@@ -35,7 +35,7 @@ layout: default
 					<ul class="ingredients">
 					{% for ingredient in page.ingredients %}
 						<li class="ingredient">
-							{{}}
+							<span class="quantity">{{ ingredient.quantity }}</span> <span class="name">{{ ingredient.name }}</span>
 						</li>
 					{% endfor %}
 					</ul>

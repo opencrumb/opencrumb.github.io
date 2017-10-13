@@ -1,10 +1,22 @@
 ---
 layout: default
 ---
+    <!-- Article container -->
     <article>
+      <!--- Article header -->
+      <header>
       <h1>{{ page.title }}</h1>
+      </header>
+      <!--- / Article header -->
+      <!--- Article body -->
+      <section class="article-body">
       {{ content }}
+      </section>
+      <!--- / Article body -->
+      <!-- Footer -->
       <section class="post-footer">
         {{ page.date | date: "%B %-d, %Y" }}
       </section>
+      <!-- / Footer -->
     </article>
+    <!-- / Article container -->
