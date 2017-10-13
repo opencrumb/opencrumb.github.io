@@ -25,6 +25,28 @@ article img {
   font-size: 1.4rem;
 }
 
-.gallery {    
+.gallery {
   margin-top: 2.5rem;
+}
+
+/* Recipe */
+
+.article-cooking .article-body {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.article-cooking .article-body .ingredients {
+  width: 40%;
+}
+
+.article-cooking .article-body .article-body-content {
+  width: 60%;
+}
+
+@media screen and (max-width: 720px) {
+  .article-cooking .article-body .ingredients,
+  .article-cooking .article-body .article-body-content {
+    width: 100%;
+  }
 }
